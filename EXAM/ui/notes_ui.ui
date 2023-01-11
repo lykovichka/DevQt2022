@@ -6,69 +6,86 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>885</width>
-    <height>412</height>
+    <width>728</width>
+    <height>419</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_3">
+  <layout class="QVBoxLayout" name="verticalLayout_5">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
      <item>
-      <widget class="QGroupBox" name="groupBoxNewNote">
-       <property name="font">
-        <font>
-         <family>Segoe Script</family>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="title">
-        <string>Новая заметка</string>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QGroupBox" name="groupBoxNewNote">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="title">
+          <string>Новая заметка</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
           <item>
-           <widget class="QLabel" name="label">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>200</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Segoe Script</family>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>Название</string>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe Script</family>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Название</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe Script</family>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="placeholderText">
+               <string>Введите название заметки</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit">
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>200</width>
-              <height>25</height>
-             </size>
-            </property>
+           <widget class="QTextEdit" name="textEdit">
             <property name="font">
              <font>
               <family>Segoe Script</family>
@@ -76,182 +93,180 @@
              </font>
             </property>
             <property name="placeholderText">
-             <string>Введите название заметки</string>
+             <string>Введите текст заметки</string>
             </property>
            </widget>
           </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QTextEdit" name="textEdit">
-          <property name="font">
-           <font>
-            <family>Segoe Script</family>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="placeholderText">
-           <string>Введите текст заметки</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
-           <widget class="QLabel" name="labeDeadLine">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="labeDeadLine">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>250</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Срок выполнения</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="pushButtonCreate">
+           <property name="font">
+            <font>
+             <family>Segoe Script</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Создать</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonSave">
+           <property name="font">
+            <font>
+             <family>Segoe Script</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Сохранить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBoxNotes">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="title">
+          <string>Заметки</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>25</height>
+              <width>350</width>
+              <height>0</height>
              </size>
             </property>
-            <property name="maximumSize">
-             <size>
-              <width>250</width>
-              <height>25</height>
-             </size>
+            <property name="font">
+             <font>
+              <family>Segoe Script</family>
+              <bold>true</bold>
+             </font>
             </property>
-            <property name="text">
-             <string>Срок выполнения</string>
+            <property name="dragEnabled">
+             <bool>false</bool>
             </property>
+            <column>
+             <property name="text">
+              <string>Название</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignLeading|AlignVCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Дата создания</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignLeading|AlignVCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Срок выполнения</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignLeading|AlignVCenter</set>
+             </property>
+            </column>
            </widget>
           </item>
-          <item>
-           <widget class="QDateTimeEdit" name="dateTimeEdit"/>
-          </item>
          </layout>
-        </item>
-       </layout>
-      </widget>
-     </item>
-     <item>
-      <widget class="QGroupBox" name="groupBoxNotes">
-       <property name="font">
-        <font>
-         <family>Segoe Script</family>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="title">
-        <string>Заметки</string>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QTableWidget" name="tableWidget">
-          <property name="minimumSize">
-           <size>
-            <width>350</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Segoe Script</family>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="dragEnabled">
-           <bool>false</bool>
-          </property>
-          <column>
-           <property name="text">
-            <string>Название</string>
-           </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="pushButtonShow">
            <property name="font">
             <font>
-             <pointsize>8</pointsize>
+             <family>Segoe Script</family>
+             <bold>true</bold>
             </font>
            </property>
-           <property name="textAlignment">
-            <set>AlignLeading|AlignVCenter</set>
-           </property>
-          </column>
-          <column>
            <property name="text">
-            <string>Дата создания</string>
+            <string>Показать/Изменить</string>
            </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonDelete">
            <property name="font">
             <font>
-             <pointsize>8</pointsize>
+             <family>Segoe Script</family>
+             <bold>true</bold>
             </font>
            </property>
-           <property name="textAlignment">
-            <set>AlignLeading|AlignVCenter</set>
-           </property>
-          </column>
-          <column>
            <property name="text">
-            <string>Срок выполнения</string>
+            <string>Удалить</string>
            </property>
-           <property name="font">
-            <font>
-             <pointsize>8</pointsize>
-            </font>
-           </property>
-           <property name="textAlignment">
-            <set>AlignLeading|AlignVCenter</set>
-           </property>
-          </column>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QPushButton" name="pushButtonCreate">
-       <property name="font">
-        <font>
-         <family>Segoe Script</family>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Создать</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButtonShow">
-       <property name="font">
-        <font>
-         <family>Segoe Script</family>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Показать</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButtonSave">
-       <property name="font">
-        <font>
-         <family>Segoe Script</family>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Сохранить</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButtonDelete">
-       <property name="font">
-        <font>
-         <family>Segoe Script</family>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Удалить</string>
-       </property>
-      </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </item>
     </layout>
    </item>

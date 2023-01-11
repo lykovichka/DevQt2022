@@ -1,24 +1,40 @@
 {
-    "notes_dict": {}
-}{
-    "": {
-        "title": "",
-        "dateCreate": "10.01.2023 13:15",
-        "text": "",
-        "deadline": "10.01.2023 13:15"
-    }
-}{
-    "": {
-        "title": "",
-        "dateCreate": "10.01.2023 13:15",
-        "text": "",
-        "deadline": "10.01.2023 13:15"
-    }
-}{
-    "": {
-        "title": "",
-        "dateCreate": "10.01.2023 13:15",
-        "text": "",
-        "deadline": "10.01.2023 13:15"
+    "notes_dict": {
+        "Test 1": {
+            "title": "Test 1",
+            "dateCreate": "10.01.2023 20:34",
+            "text": "Cats, Cats - Don't think about cats",
+            "deadline": "02.02.2024 23:04"
+        },
+        "Test 2": {
+            "title": "Test 2",
+            "dateCreate": "10.01.2023 20:34",
+            "text": "Cats or Dogs?",
+            "deadline": "10.03.2023 23:29"
+        },
+        "Test 3": {
+            "title": "Test 3",
+            "dateCreate": "10.01.2023 20:35",
+            "text": "Cats, Cats - Don't think about cats =)",
+            "deadline": "10.01.2023 23:26"
+        },
+        "Test4": {
+            "title": "Test4",
+            "dateCreate": "10.01.2023 20:35",
+            "text": "Empty note",
+            "deadline": "25.01.2023 20:35"
+        },
+        "New": {
+            "title": "New",
+            "dateCreate": "10.01.2023 23:10",
+            "text": "New, but not new, I want to sleeeeeep",
+            "deadline": "12.01.2023 23:36"
+        },
+        "Test  final": {
+            "title": "Test  final",
+            "dateCreate": "10.01.2023 23:59",
+            "text": "let's go to sleep!!!!!",
+            "deadline": "11.01.2023 0:00"
+        }
     }
 }

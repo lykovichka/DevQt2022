@@ -24,11 +24,13 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(885, 412)
-        self.verticalLayout_3 = QVBoxLayout(Form)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.horizontalLayout_4 = QHBoxLayout()
-        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        Form.resize(728, 419)
+        self.verticalLayout_5 = QVBoxLayout(Form)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.verticalLayout_4 = QVBoxLayout()
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.groupBoxNewNote = QGroupBox(Form)
         self.groupBoxNewNote.setObjectName(u"groupBoxNewNote")
         font = QFont()
@@ -82,8 +84,30 @@ class Ui_Form(object):
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
 
-        self.horizontalLayout_4.addWidget(self.groupBoxNewNote)
+        self.verticalLayout_4.addWidget(self.groupBoxNewNote)
 
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButtonCreate = QPushButton(Form)
+        self.pushButtonCreate.setObjectName(u"pushButtonCreate")
+        self.pushButtonCreate.setFont(font)
+
+        self.horizontalLayout_5.addWidget(self.pushButtonCreate)
+
+        self.pushButtonSave = QPushButton(Form)
+        self.pushButtonSave.setObjectName(u"pushButtonSave")
+        self.pushButtonSave.setFont(font)
+
+        self.horizontalLayout_5.addWidget(self.pushButtonSave)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_5)
+
+
+        self.horizontalLayout_6.addLayout(self.verticalLayout_4)
+
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.groupBoxNotes = QGroupBox(Form)
         self.groupBoxNotes.setObjectName(u"groupBoxNotes")
         self.groupBoxNotes.setFont(font)
@@ -107,6 +131,7 @@ class Ui_Form(object):
         __qtablewidgetitem2.setFont(font1);
         self.tableWidget.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.tableWidget.setObjectName(u"tableWidget")
+        self.tableWidget.setEnabled(True)
         self.tableWidget.setMinimumSize(QSize(350, 0))
         self.tableWidget.setFont(font)
         self.tableWidget.setDragEnabled(False)
@@ -114,39 +139,30 @@ class Ui_Form(object):
         self.verticalLayout_2.addWidget(self.tableWidget)
 
 
-        self.horizontalLayout_4.addWidget(self.groupBoxNotes)
+        self.verticalLayout_3.addWidget(self.groupBoxNotes)
 
-
-        self.verticalLayout_3.addLayout(self.horizontalLayout_4)
-
-        self.horizontalLayout_2 = QHBoxLayout()
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.pushButtonCreate = QPushButton(Form)
-        self.pushButtonCreate.setObjectName(u"pushButtonCreate")
-        self.pushButtonCreate.setFont(font)
-
-        self.horizontalLayout_2.addWidget(self.pushButtonCreate)
-
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.pushButtonShow = QPushButton(Form)
         self.pushButtonShow.setObjectName(u"pushButtonShow")
         self.pushButtonShow.setFont(font)
 
-        self.horizontalLayout_2.addWidget(self.pushButtonShow)
-
-        self.pushButtonSave = QPushButton(Form)
-        self.pushButtonSave.setObjectName(u"pushButtonSave")
-        self.pushButtonSave.setFont(font)
-
-        self.horizontalLayout_2.addWidget(self.pushButtonSave)
+        self.horizontalLayout_4.addWidget(self.pushButtonShow)
 
         self.pushButtonDelete = QPushButton(Form)
         self.pushButtonDelete.setObjectName(u"pushButtonDelete")
         self.pushButtonDelete.setFont(font)
 
-        self.horizontalLayout_2.addWidget(self.pushButtonDelete)
+        self.horizontalLayout_4.addWidget(self.pushButtonDelete)
 
 
-        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_4)
+
+
+        self.horizontalLayout_6.addLayout(self.verticalLayout_3)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_6)
 
 
         self.retranslateUi(Form)
@@ -161,6 +177,8 @@ class Ui_Form(object):
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("Form", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0437\u0430\u043c\u0435\u0442\u043a\u0438", None))
         self.textEdit.setPlaceholderText(QCoreApplication.translate("Form", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043a\u0441\u0442 \u0437\u0430\u043c\u0435\u0442\u043a\u0438", None))
         self.labeDeadLine.setText(QCoreApplication.translate("Form", u"\u0421\u0440\u043e\u043a \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f", None))
+        self.pushButtonCreate.setText(QCoreApplication.translate("Form", u"\u0421\u043e\u0437\u0434\u0430\u0442\u044c", None))
+        self.pushButtonSave.setText(QCoreApplication.translate("Form", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
         self.groupBoxNotes.setTitle(QCoreApplication.translate("Form", u"\u0417\u0430\u043c\u0435\u0442\u043a\u0438", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435", None));
@@ -168,9 +186,7 @@ class Ui_Form(object):
         ___qtablewidgetitem1.setText(QCoreApplication.translate("Form", u"\u0414\u0430\u0442\u0430 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f", None));
         ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("Form", u"\u0421\u0440\u043e\u043a \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f", None));
-        self.pushButtonCreate.setText(QCoreApplication.translate("Form", u"\u0421\u043e\u0437\u0434\u0430\u0442\u044c", None))
-        self.pushButtonShow.setText(QCoreApplication.translate("Form", u"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c", None))
-        self.pushButtonSave.setText(QCoreApplication.translate("Form", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
+        self.pushButtonShow.setText(QCoreApplication.translate("Form", u"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c/\u0418\u0437\u043c\u0435\u043d\u0438\u0442\u044c", None))
         self.pushButtonDelete.setText(QCoreApplication.translate("Form", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c", None))
     # retranslateUi
 
