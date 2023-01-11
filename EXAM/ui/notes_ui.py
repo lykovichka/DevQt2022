@@ -25,6 +25,8 @@ class Ui_Form(object):
         if not Form.objectName():
             Form.setObjectName(u"Form")
         Form.resize(728, 419)
+        Form.setAutoFillBackground(False)
+        Form.setStyleSheet(u"background-color: rgb(255, 253, 230);")
         self.verticalLayout_5 = QVBoxLayout(Form)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.horizontalLayout_6 = QHBoxLayout()
@@ -54,6 +56,8 @@ class Ui_Form(object):
         self.lineEdit.setMinimumSize(QSize(200, 25))
         self.lineEdit.setMaximumSize(QSize(200, 25))
         self.lineEdit.setFont(font)
+        self.lineEdit.setStyleSheet(u"background-color: rgb(241, 238, 255);\n"
+"background-color: rgb(255, 231, 239);")
 
         self.horizontalLayout.addWidget(self.lineEdit)
 
@@ -63,6 +67,7 @@ class Ui_Form(object):
         self.textEdit = QTextEdit(self.groupBoxNewNote)
         self.textEdit.setObjectName(u"textEdit")
         self.textEdit.setFont(font)
+        self.textEdit.setStyleSheet(u"background-color: rgb(255, 231, 239);")
 
         self.verticalLayout.addWidget(self.textEdit)
 
@@ -72,11 +77,17 @@ class Ui_Form(object):
         self.labeDeadLine.setObjectName(u"labeDeadLine")
         self.labeDeadLine.setMinimumSize(QSize(100, 25))
         self.labeDeadLine.setMaximumSize(QSize(250, 25))
+        font1 = QFont()
+        font1.setFamilies([u"Segoe Script"])
+        font1.setBold(True)
+        font1.setUnderline(False)
+        self.labeDeadLine.setFont(font1)
 
         self.horizontalLayout_3.addWidget(self.labeDeadLine)
 
         self.dateTimeEdit = QDateTimeEdit(self.groupBoxNewNote)
         self.dateTimeEdit.setObjectName(u"dateTimeEdit")
+        self.dateTimeEdit.setStyleSheet(u"background-color: rgb(239, 235, 255);")
 
         self.horizontalLayout_3.addWidget(self.dateTimeEdit)
 
@@ -91,12 +102,17 @@ class Ui_Form(object):
         self.pushButtonCreate = QPushButton(Form)
         self.pushButtonCreate.setObjectName(u"pushButtonCreate")
         self.pushButtonCreate.setFont(font)
+        self.pushButtonCreate.setAutoFillBackground(False)
+        self.pushButtonCreate.setStyleSheet(u"background-color: rgb(238, 255, 254);\n"
+"border-color: rgb(93, 101, 255);")
 
         self.horizontalLayout_5.addWidget(self.pushButtonCreate)
 
         self.pushButtonSave = QPushButton(Form)
         self.pushButtonSave.setObjectName(u"pushButtonSave")
         self.pushButtonSave.setFont(font)
+        self.pushButtonSave.setStyleSheet(u"background-color: rgb(238, 255, 254);\n"
+"border-color: rgb(93, 101, 255);")
 
         self.horizontalLayout_5.addWidget(self.pushButtonSave)
 
@@ -116,24 +132,29 @@ class Ui_Form(object):
         self.tableWidget = QTableWidget(self.groupBoxNotes)
         if (self.tableWidget.columnCount() < 3):
             self.tableWidget.setColumnCount(3)
-        font1 = QFont()
-        font1.setPointSize(8)
+        font2 = QFont()
+        font2.setFamilies([u"Segoe Script"])
+        font2.setPointSize(8)
         __qtablewidgetitem = QTableWidgetItem()
         __qtablewidgetitem.setTextAlignment(Qt.AlignLeading|Qt.AlignVCenter);
-        __qtablewidgetitem.setFont(font1);
+        __qtablewidgetitem.setFont(font2);
+        __qtablewidgetitem.setBackground(QColor(255, 253, 230));
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
         __qtablewidgetitem1.setTextAlignment(Qt.AlignLeading|Qt.AlignVCenter);
-        __qtablewidgetitem1.setFont(font1);
+        __qtablewidgetitem1.setFont(font2);
+        __qtablewidgetitem1.setBackground(QColor(255, 253, 230));
         self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
         __qtablewidgetitem2.setTextAlignment(Qt.AlignLeading|Qt.AlignVCenter);
-        __qtablewidgetitem2.setFont(font1);
+        __qtablewidgetitem2.setFont(font2);
+        __qtablewidgetitem2.setBackground(QColor(255, 253, 230));
         self.tableWidget.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setEnabled(True)
         self.tableWidget.setMinimumSize(QSize(350, 0))
         self.tableWidget.setFont(font)
+        self.tableWidget.setStyleSheet(u"background-color: rgb(230, 255, 217);")
         self.tableWidget.setDragEnabled(False)
 
         self.verticalLayout_2.addWidget(self.tableWidget)
@@ -146,12 +167,16 @@ class Ui_Form(object):
         self.pushButtonShow = QPushButton(Form)
         self.pushButtonShow.setObjectName(u"pushButtonShow")
         self.pushButtonShow.setFont(font)
+        self.pushButtonShow.setStyleSheet(u"background-color: rgb(238, 255, 254);\n"
+"border-color: rgb(93, 101, 255);")
 
         self.horizontalLayout_4.addWidget(self.pushButtonShow)
 
         self.pushButtonDelete = QPushButton(Form)
         self.pushButtonDelete.setObjectName(u"pushButtonDelete")
         self.pushButtonDelete.setFont(font)
+        self.pushButtonDelete.setStyleSheet(u"background-color: rgb(238, 255, 254);\n"
+"border-color: rgb(93, 101, 255);")
 
         self.horizontalLayout_4.addWidget(self.pushButtonDelete)
 

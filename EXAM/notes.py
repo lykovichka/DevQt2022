@@ -25,6 +25,7 @@ class Window(QtWidgets.QWidget):
 
         self.setWindowTitle("Notes")
 
+
         self.ui.tableWidget.setColumnWidth(1, 155)
         self.ui.tableWidget.setColumnWidth(2, 155)
 
@@ -77,11 +78,7 @@ class Window(QtWidgets.QWidget):
                 self.ui.tableWidget.setItem(row, 1, QtWidgets.QTableWidgetItem(self.notes_dict[key]["dateCreate"]))
                 self.ui.tableWidget.setItem(row, 2, QtWidgets.QTableWidgetItem(self.notes_dict[key]["deadline"]))
                 row += 1
-
-        self.ui.tableWidget.sortByColumn(2, QtCore.Qt.SortOrder.DescendingOrder)
-        #self.ui.tableWidget.setStyleSheet('QTableWidget.column {background-color: red; color: white}')
-
-
+        self.ui.tableWidget.sortByColumn(0, QtCore.Qt.SortOrder.AscendingOrder)
 
     def buttonCreate(self) -> None:
         """ Функция создания новой заметки """
@@ -162,7 +159,7 @@ class Window(QtWidgets.QWidget):
         key = noteitem[0]
         self.ui.textEdit.setText(self.notes_dict[key]["text"])
 
-        # change dateTimeEdit Не получилось
+        # change dateTimeEdit
         string_date = self.notes_dict[key]["deadline"]
         self.ui.dateTimeEdit.setDateTime(datetime.datetime.strptime(string_date, "%d.%m.%Y %H:%M"))
 
@@ -183,5 +180,4 @@ if __name__ == "__main__":
 
     window = Window()
     window.show()
-
     app.exec()

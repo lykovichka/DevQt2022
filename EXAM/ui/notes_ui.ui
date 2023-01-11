@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 253, 230);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_5">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -77,6 +83,10 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(241, 238, 255);
+background-color: rgb(255, 231, 239);</string>
+              </property>
               <property name="placeholderText">
                <string>Введите название заметки</string>
               </property>
@@ -91,6 +101,9 @@
               <family>Segoe Script</family>
               <bold>true</bold>
              </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 231, 239);</string>
             </property>
             <property name="placeholderText">
              <string>Введите текст заметки</string>
@@ -113,13 +126,24 @@
                 <height>25</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Segoe Script</family>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
               <property name="text">
                <string>Срок выполнения</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+             <widget class="QDateTimeEdit" name="dateTimeEdit">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(239, 235, 255);</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -136,6 +160,13 @@
              <bold>true</bold>
             </font>
            </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(238, 255, 254);
+border-color: rgb(93, 101, 255);</string>
+           </property>
            <property name="text">
             <string>Создать</string>
            </property>
@@ -148,6 +179,10 @@
              <family>Segoe Script</family>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(238, 255, 254);
+border-color: rgb(93, 101, 255);</string>
            </property>
            <property name="text">
             <string>Сохранить</string>
@@ -189,6 +224,9 @@
               <bold>true</bold>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(230, 255, 217);</string>
+            </property>
             <property name="dragEnabled">
              <bool>false</bool>
             </property>
@@ -198,11 +236,19 @@
              </property>
              <property name="font">
               <font>
+               <family>Segoe Script</family>
                <pointsize>8</pointsize>
               </font>
              </property>
              <property name="textAlignment">
               <set>AlignLeading|AlignVCenter</set>
+             </property>
+             <property name="background">
+              <color>
+               <red>255</red>
+               <green>253</green>
+               <blue>230</blue>
+              </color>
              </property>
             </column>
             <column>
@@ -211,11 +257,19 @@
              </property>
              <property name="font">
               <font>
+               <family>Segoe Script</family>
                <pointsize>8</pointsize>
               </font>
              </property>
              <property name="textAlignment">
               <set>AlignLeading|AlignVCenter</set>
+             </property>
+             <property name="background">
+              <color>
+               <red>255</red>
+               <green>253</green>
+               <blue>230</blue>
+              </color>
              </property>
             </column>
             <column>
@@ -224,11 +278,19 @@
              </property>
              <property name="font">
               <font>
+               <family>Segoe Script</family>
                <pointsize>8</pointsize>
               </font>
              </property>
              <property name="textAlignment">
               <set>AlignLeading|AlignVCenter</set>
+             </property>
+             <property name="background">
+              <color>
+               <red>255</red>
+               <green>253</green>
+               <blue>230</blue>
+              </color>
              </property>
             </column>
            </widget>
@@ -246,6 +308,10 @@
              <bold>true</bold>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(238, 255, 254);
+border-color: rgb(93, 101, 255);</string>
+           </property>
            <property name="text">
             <string>Показать/Изменить</string>
            </property>
@@ -258,6 +324,10 @@
              <family>Segoe Script</family>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(238, 255, 254);
+border-color: rgb(93, 101, 255);</string>
            </property>
            <property name="text">
             <string>Удалить</string>
